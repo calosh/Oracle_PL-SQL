@@ -1,0 +1,40 @@
+	Java 8
+https://linuxize.com/post/install-java-on-ubuntu-18-04/
+https://ubunlog.com/instala-java-8-9-y-10-en-ubuntu-18-04-y-derivados/
+
+	Oracle 12
+https://hub.docker.com/u/calosh/content/sub-8c5646a5-f3ac-4490-a48b-5d8a04aa1da6
+docker login
+docker pull store/oracle/database-enterprise:12.2.0.1
+
+docker run -d -p 1521:1521 --name oracle store/oracle/database-enterprise:12.2.0.1
+docker logs -f c4b8071e527d
+
+usuario: system
+pass: Oradoc_db1
+sid: ORCLCDB
+
+https://www.discoduroderoer.es/solucion-a-ora-65096-invalid-common-user-or-role-name-en-oracle/
+alter session set "_ORACLE_SCRIPT"=true;
+set serveroutput on
+
+
+	SQL Developer
+Vers 18.4.0
+Jkk 8
+
+nano /home/calosh/.sqldeveloper/18.4.0/product.conf
+SetJavaHome /usr/lib/jvm/java-8-openjdk-amd64/
+
+	Cambiar de version de jdk
+sudo update-alternatives --config java
+
+
+	- Convertir .rpm a .deb
+sudo alien -d sqldeveloper-18.4.0-376.1900.noarch.rpm
+
+	- Instalar paquetes .deb
+sudo dpkg -i
+
+
+
