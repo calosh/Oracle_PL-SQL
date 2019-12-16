@@ -14,8 +14,13 @@ usuario: system
 pass: Oradoc_db1
 sid: ORCLCDB
 
+	
+sudo docker start f1cfe00a3b9fd9f
+
 https://www.discoduroderoer.es/solucion-a-ora-65096-invalid-common-user-or-role-name-en-oracle/
+-- Permitir la execucion de scripts desde cliente sql-developer
 alter session set "_ORACLE_SCRIPT"=true;
+-- Salida por pantalla
 set serveroutput on
 
 
