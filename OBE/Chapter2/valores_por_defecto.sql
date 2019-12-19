@@ -1,0 +1,7 @@
+DECLARE
+  nombre VARCHAR2(100);
+  edad NUMERIC;
+BEGIN
+  DBMS_OUTPUT.PUT_LINE(COALESCE(nombre, 'Sin nombre'));
+END;
+
