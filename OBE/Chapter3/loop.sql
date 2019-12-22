@@ -1,0 +1,7 @@
+DECLARE
+  aux NUMBER :=0;
+BEGIN
+  FOR i in 0..10 LOOP
+    DBMS_OUTPUT.PUT_LINE(i);
+  END LOOP;
+END;
